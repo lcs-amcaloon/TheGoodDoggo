@@ -9,8 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            VStack(alignment: .leading) {
+                Button(action: {
+                    // show a new dog
+                    
+                    
+                }, label: {
+                    Text("Show Me A New Doggo!")
+
+                })
+                
+                
+                Image("example")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                
+                Spacer()
+                
+            }
+            .navigationTitle("The Good Doggo")
+        }
     }
 }
 
